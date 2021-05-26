@@ -9,7 +9,9 @@ Project has 2 features:
 
 To correct script works you need set BITLY_TOKEN in yours enviroment variable `.env`. 
 
-This token provides access to API [bil.ty](https://app.bitly.com/). You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`
+This token provides access to API [bil.ty](https://app.bitly.com/). 
+
+You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`
 
 Python3 should be already installed. 
 Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
