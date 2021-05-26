@@ -2,6 +2,7 @@ import os
 import requests
 import logging
 from urllib.parse import urlparse
+import argparse
 
 TOKEN = os.getenv('BITLY_TOKEN')
 HEADERS = {
@@ -50,7 +51,15 @@ def is_bitlink(bitlink):
 def main():
     logging.basicConfig(level=logging.INFO)
 
-    url = input('Type url:\n')
+    parser = argparse.ArgumentParser(
+        description='''Программа позволяет получить bitlink\
+         из url или позволяет получить количество переходов\
+         по введенному bitlink'''
+    )
+    parser.add_argument('url', help='Адрес сайта или bitlink')
+    args = parser.parse_args()
+
+    url = args.url
     parsed_link = urlparse(url)
     bitly_link = f'{parsed_link.netloc}{parsed_link.path}'
     try:
