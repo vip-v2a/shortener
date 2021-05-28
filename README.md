@@ -14,7 +14,7 @@ REDIS_ADDRESS=localhost:6379
 MEANING_OF_LIFE=42
 MULTILINE_VAR="hello\nworld"
 ```
-Then adds them to environment variable using [python-dotenv](https://pypi.org/project/python-dotenv/0.9.1/):
+Then adds them to environment variable using [python-dotenv](https://pypi.org/project/python-dotenv/0.9.1/), [git python-dotenv](https://github.com/theskumar/python-dotenv#usages):
 ```
 from dotenv import load_dotenv
 
@@ -32,13 +32,12 @@ EMAIL=foo@example.org
 $ dotenv run -- python foo.py
 ```
 
-This token provides access to API [bil.ty](https://app.bitly.com/). 
+If you need [creation of virtual environment](https://vc.ru/dev/240211-nastroyka-rabochego-okruzheniya-na-windows-dlya-raboty-s-python)
 
-<<<<<<< HEAD
+`BITLY_TOKEN` token provides access to API [bil.ty](https://app.bitly.com/). 
+
 You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`.
-=======
 You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`
->>>>>>> origin/main
 
 Python3 should be already installed. 
 Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
