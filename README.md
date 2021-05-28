@@ -34,7 +34,11 @@ $ dotenv run -- python foo.py
 
 This token provides access to API [bil.ty](https://app.bitly.com/). 
 
+<<<<<<< HEAD
 You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`.
+=======
+You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`
+>>>>>>> origin/main
 
 Python3 should be already installed. 
 Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
