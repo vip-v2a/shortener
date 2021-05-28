@@ -32,12 +32,11 @@ EMAIL=foo@example.org
 $ dotenv run -- python foo.py
 ```
 
-If you need [creation of virtual environment](https://vc.ru/dev/240211-nastroyka-rabochego-okruzheniya-na-windows-dlya-raboty-s-python)
+If you need [creation of virtual environment](https://vc.ru/dev/240211-nastroyka-rabochego-okruzheniya-na-windows-dlya-raboty-s-python).
 
 `BITLY_TOKEN` token provides access to API [bil.ty](https://app.bitly.com/). 
 
 You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`.
-You can get token from [tokens generator](https://bitly.com/a/oauth_apps). You need `GENERIC ACCESS TOKEN`
 
 Python3 should be already installed. 
 Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
