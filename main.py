@@ -47,13 +47,13 @@ def is_bitlink(bitlink, headers):
 
 
 def main():
-    
+
     load_dotenv()
     TOKEN = os.getenv('BITLY_TOKEN')
     HEADERS = {
         'Authorization': f'Bearer {TOKEN}',
     }
-    
+
     logging.basicConfig(level=logging.INFO)
 
     parser = argparse.ArgumentParser(
