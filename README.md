@@ -1,4 +1,4 @@
-# Bitly url shorterer
+# Bitly url shortener
 
 Project has 2 features:
 - generates bitlink from typed url
@@ -7,7 +7,30 @@ Project has 2 features:
 
 ### How to install
 
-To correct script works you need set BITLY_TOKEN in yours enviroment variable `.env`. 
+You need to set BITLY_TOKEN in `.env` file. The syntax of `.env` file supported by python-dotenv:
+```
+# a comment and that will be ignored.
+REDIS_ADDRESS=localhost:6379
+MEANING_OF_LIFE=42
+MULTILINE_VAR="hello\nworld"
+```
+Then adds them to environment variable using [python-dotenv](https://pypi.org/project/python-dotenv/0.9.1/):
+```
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('BITLY_TOKEN')
+```
+A CLI interface dotenv is also included, which helps you manipulate the `.env` file without manually opening it.
+```
+$ pip install "python-dotenv[cli]"
+$ dotenv set USER=foo
+$ dotenv set EMAIL=foo@example.org
+$ dotenv list
+USER=foo
+EMAIL=foo@example.org
+$ dotenv run -- python foo.py
+```
 
 This token provides access to API [bil.ty](https://app.bitly.com/). 
 
