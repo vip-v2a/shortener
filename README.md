@@ -45,3 +45,20 @@ pip install -r requirements.txt
 ### Project Goals
 
 The code is written for educational purposes on online-course for learning API web-services [dvmn.org](https://dvmn.org/).
+
+### Getting started
+
+```
+$ pip install "python-dotenv[cli]"
+Installing collected packages: python-dotenv
+Successfully installed python-dotenv-0.17.1
+
+$ dotenv set BITLY_TOKEN *your-bitly-token-number*
+BITLY_TOKEN=*your-bitly-token-number*
+
+$ dotenv run -- python main.py https://replit.com/@vvvv4/api2lclicklinks#main.py
+bitlink: https://bit.ly/3v16Rwq
+
+$ dotenv run -- python main.py https://bit.ly/3v16Rwq
+clicks_count:  12
+```
