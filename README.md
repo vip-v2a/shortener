@@ -7,7 +7,7 @@ Project has 2 features:
 
 ### How to install
 
-You need to set BITLY_TOKEN in `.env` file. The syntax of `.env` file supported by python-dotenv:
+You need to set `BITLY_TOKEN` in `.env` file. The syntax of `.env` file supported by python-dotenv:
 ```
 # a comment and that will be ignored.
 REDIS_ADDRESS=localhost:6379
