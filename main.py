@@ -49,9 +49,9 @@ def is_bitlink(bitlink, headers):
 def main():
 
     load_dotenv()
-    TOKEN = os.getenv('BITLY_TOKEN')
-    HEADERS = {
-        'Authorization': f'Bearer {TOKEN}',
+    bitly_token = os.getenv('BITLY_TOKEN')
+    headers = {
+        'Authorization': f'Bearer {bitly_token}',
     }
 
     logging.basicConfig(level=logging.INFO)
@@ -68,10 +68,10 @@ def main():
     parsed_link = urlparse(url)
     bitly_link = f'{parsed_link.netloc}{parsed_link.path}'
     try:
-        if is_bitlink(bitly_link, HEADERS):
-            print('clicks_count: ', count_clicks(bitly_link, HEADERS))
+        if is_bitlink(bitly_link, headers):
+            print('clicks_count: ', count_clicks(bitly_link, headers))
         else:
-            short_link = shorten_link(url, HEADERS)
+            short_link = shorten_link(url, headers)
             print('bitlink:', short_link)
 
     except requests.exceptions.HTTPError as err:
