@@ -14,13 +14,7 @@ REDIS_ADDRESS=localhost:6379
 MEANING_OF_LIFE=42
 MULTILINE_VAR="hello\nworld"
 ```
-Then adds them to environment variable using [python-dotenv](https://pypi.org/project/python-dotenv/0.9.1/), [git python-dotenv](https://github.com/theskumar/python-dotenv#usages):
-```
-from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv('BITLY_TOKEN')
-```
 A CLI interface dotenv is also included, which helps you manipulate the `.env` file without manually opening it:
 ```
 $ pip install "python-dotenv[cli]"
@@ -31,6 +25,8 @@ USER=foo
 EMAIL=foo@example.org
 $ dotenv run -- python foo.py
 ```
+
+More information about [python-dotenv](https://pypi.org/project/python-dotenv/0.9.1/), [git python-dotenv](https://github.com/theskumar/python-dotenv#usages).
 
 If you need [creation of virtual environment](https://vc.ru/dev/240211-nastroyka-rabochego-okruzheniya-na-windows-dlya-raboty-s-python).
 

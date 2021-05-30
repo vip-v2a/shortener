@@ -58,8 +58,8 @@ def main():
 
     parser = argparse.ArgumentParser(
         description="""Программа позволяет получить bitlink\
-         из url или позволяет получить количество переходов\
-         по введенному bitlink"""
+        из url или позволяет получить количество переходов\
+        по введенному bitlink"""
     )
     parser.add_argument('url', help='Адрес сайта или bitlink')
     args = parser.parse_args()
@@ -76,7 +76,6 @@ def main():
 
     except requests.exceptions.HTTPError as err:
         logging.error(f"Can't get data from server:\n{err}")
-        exit()
 
 
 if __name__ == '__main__':
